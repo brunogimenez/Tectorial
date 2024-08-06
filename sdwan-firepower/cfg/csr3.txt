@@ -1,0 +1,55 @@
+conf t
+hostname csr63
+!
+!
+ip vrf corp3
+!
+interface GigabitEthernet1
+ ip address 198.18.133.63 255.255.192.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ shutdown
+!
+interface GigabitEthernet2
+ ip address 198.19.10.63 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet3
+ ip address 198.19.20.63 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet4
+ ip vrf forwarding corp3
+ ip address 198.19.30.63 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ no shutdown
+!
+interface GigabitEthernet5
+ ip address 198.19.40.63 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet6
+ ip address 198.19.12.63 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ no shutdown
+!
+ip route 198.60.20.0 255.255.255.0 198.19.30.1
+ip route vrf corp3 0.0.0.0 0.0.0.0 198.19.30.1
+!
+end
+wr
+

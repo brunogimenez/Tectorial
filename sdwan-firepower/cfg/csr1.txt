@@ -1,0 +1,60 @@
+conf t
+hostname csr61
+!
+!
+!
+ip vrf branch2
+!
+!
+interface GigabitEthernet1
+ ip address 198.18.133.61 255.255.192.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet2
+ ip address 198.19.10.61 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet3
+ description "THINK OLD .20"
+ ip vrf forwarding branch2
+ ip address 198.60.20.61 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ no shut
+!
+interface GigabitEthernet4
+ description "old 198.10.30.61"
+ ip address 198.60.30.61 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet5
+ ip address 198.19.40.61 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet6
+ ip address 198.19.12.61 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ no shut
+!
+ip route vrf branch2 0.0.0.0 0.0.0.0 198.60.20.100
+!
+!
+!
+end
+wr
+

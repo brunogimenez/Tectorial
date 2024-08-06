@@ -1,0 +1,6 @@
+URL: https://cisco.webex.com/webappng/sites/cisco/recording/playback/49fa900ab2e8103c9e7fca591d166d6d
+Password: FTqeaVM4S72
+
+
+Quinta as Quinze: https://community.cisco.com/t5/v%C3%ADdeos-de-seguran%C3%A7a/material-evento-cisco-secure-access-trabalho-seguro-sem/ba-p/5067256
+Conteudo: Demo da experiencia do usuario, políticas, VPN, ZTNA e testes.
