@@ -444,9 +444,10 @@ This will be a basic OSPF configuration where HUB will announce the network **Co
 ![Pasted%20image%2020240402173341.png](img/Pasted%20image%2020240402173341.png)
 
 5. After creating the objects, they can be searched in the **Available Network** field. Search for **Corporate3**,  **net_Loop10**, and **net_Loop11**. Then click **Add** to add them to **Selected Network**. Click **Ok** to finish.
+
 ![Pasted%20image%2020240407150922.png](img/Pasted%20image%2020240407150922.png)
 
-6. Click Ok and then Save
+7. Click Ok and then Save
 <br>![Pasted%20image%2020240402151013.png](img/Pasted%20image%2020240402151013.png)
 
 #### Branch2 configuration
