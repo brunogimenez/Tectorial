@@ -18,8 +18,7 @@ revision: 0
 - SDWAN and WAN status/summary
 ## Lab Topologies
 
-![test file](img/painelBrunoFagioli.png)
-![Pasted image 20240313182116.png](../img/Pasted image 20240313182116.png)
+![Pasted image 20240313182116.png](img/`Pasted image 20240313182116.png`)
 ![Pasted image 20240313182127.png](img/Pasted image 20240313182127.png)
 ![Pasted image 20240313182137.png](img/Pasted image 20240313182137.png)
 ![Pasted image 20240313182148.png](img/Pasted image 20240313182148.png)
